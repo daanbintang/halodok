@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0891B2",
+              second: "#E0F2FE",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https:cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>halodok.com</title>
+  </head>
+  <body>
+    <div class="min-h-screen text-black bg-[#FDFDFD] antialiased mb-96">
+      <!-- NAVIGATION -->
+      <nav
+        id="navbar"
+        class="fixed z-30 flex items-center justify-between w-full py-2 bg-white bg-cover px-36 rounded-b-2xl text-primary"
+      >
+        <div class="flex items-center gap-x-20">
+          <div class="flex items-center gap-x-2">
+            <i class="text-xl bi bi-heart-pulse-fill"></i>
+            <h1 class="text-xl font-semibold">Halodok</h1>
+          </div>
+          <ul class="flex items-center font-semibold cursor-pointer gap-x-5">
+            <li
+              class="hover:bg-slate-100 py-2 px-4 rounded-xl transition duration-300]"
+            >
+              Home
+            </li>
+            <li
+              class="px-4 py-2 transition duration-300 hover:bg-slate-100 rounded-xl"
+            >
+              Features
+            </li>
+            <li
+              class="px-4 py-2 transition duration-300 hover:bg-slate-100 rounded-xl"
+            >
+              Blog
+            </li>
+            <li
+              class="px-4 py-2 transition duration-300 hover:bg-slate-100 rounded-xl"
+            >
+              About Us
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center font-semibold gap-x-10">
+          <button>Login</button>
+          <button
+            class="px-4 py-2 overflow-hidden antialiased transition duration-300 border rounded-full border-primary hover:bg-primary hover:text-white"
+          >
+            Book Now
+          </button>
+          <hr />
+        </div>
+      </nav>
+      <!-- END NAVIGATION -->
+      <!-- HERO -->
+      <div class="relative flex items-center justify-between mt-0 px-36">
+        <div class="flex flex-col w-[40%]">
+          <h1
+            class="text-5xl font-semibold leading-[60px] capitalize text-primary"
+          >
+            get the healtcare you need, when you need it.
+          </h1>
+          <p class="py-5 text-sm antialiased text-primary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+            tempora, magni explicabo impedit vitae exercitationem tenetur soluta
+            officia corrupti voluptate?
+          </p>
+          <button
+            class="px-4 py-2 antialiased text-white transition duration-300 rounded-full bg-primary hover:bg-cyan-500"
+          >
+            Book An Appointment
+          </button>
+        </div>
+        <div
+          class="absolute bg-[#FDFDFD] flex flex-col w-[20%] shadow-lg p-3 rounded-xl left-[45%] top-28 z-20"
+        >
+          <div class="flex items-center py-3 gap-x-2">
+            <img
+              src="https://yt3.googleusercontent.com/Jg2d9WQ9Edhmnp7gk5BgMDRzos1YYE9JWlkbjnAqHWD4KooDY_KTkf7Vl23l7n1cFD-o3N9rIRU=s88-c-k-c0x00ffffff-no-rj"
+              alt=""
+              class="w-5 h-5 rounded-full"
+            />
+            <h1>Jane Doe</h1>
+          </div>
+          <p class="text-sm text-gray-500 capitalize">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            fuga nisi nostrum, enim sapiente voluptates repellendus tenetur ex
+            molestiae aspernatur necessitatibus iure corrupti, mollitia ipsam
+            ratione quam ipsa sit deleniti.
+          </p>
+        </div>
+        <div
+          class="bg-gradient-to-t from-primary to-[#FDFDFD] -skew-x-6 relative rounded-t-xl"
+        >
+          <img src="asset/doctor.png" alt="" class="skew-x-6" />
+        </div>
+      </div>
+      <!-- END HERO -->
+      <!-- MAIN CONTENT -->
+      <main
+        class="flex items-center p-5 text-[#FDFDFDFD] gap-x-5 mx-36 bg-primary rounded-xl"
+      >
+        <div class="">
+          <i class="bi bi-calendar3"></i>
+          <h1 class="py-2 text-lg font-semibold">
+            Online Appointment Scheduling
+          </h1>
+          <p class="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus fugiat doloremque unde suscipit expedita libero,
+            laboriosam blanditiis.
+          </p>
+        </div>
+        <div class="">
+          <i class="bi bi-bell-fill"></i>
+          <h1 class="py-2 text-lg font-semibold">Medication Remenders</h1>
+          <p class="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus fugiat doloremque unde suscipit expedita libero,
+            laboriosam blanditiis.
+          </p>
+        </div>
+
+        <div class="">
+          <i class="bi bi-broadcast"></i>
+          <h1 class="py-2 text-lg font-semibold">Virtual Consultaisions</h1>
+          <p class="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            temporibus fugiat doloremque unde suscipit expedita libero,
+            laboriosam blanditiis.
+          </p>
+        </div>
+      </main>
+      <!-- END MAIN CONTENT -->
+    </div>
+  </body>
+</html>
